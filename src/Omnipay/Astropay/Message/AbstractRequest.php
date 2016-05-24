@@ -14,6 +14,12 @@ abstract class AbstractRequest extends \Omnipay\Common\Message\AbstractRequest {
   abstract public function getEndpoint();
 
   public function getData() {
+    $data['x_version'] = $this->x_version;
+    $data['x_version'] = $this->x_version;
+    $data['x_version'] = $this->x_version;
+    $data['x_version'] = $this->x_version;
+    $data['x_version'] = $this->x_version;
+    $data['x_version'] = $this->x_version;
     return $data;
   }
 
