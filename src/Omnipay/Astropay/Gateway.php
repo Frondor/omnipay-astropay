@@ -36,4 +36,30 @@ class Gateway extends AbstractGateway {
     public function purchase(array $parameters = array()) {
         return $this->createRequest('\Omnipay\Astropay\Message\PurchaseRequest', $parameters);
     }
+
+    public function auth_transaction(array $parameters = array()) {
+        return $this->createRequest('\Omnipay\Astropay\Message\PurchaseRequest', $parameters);
+    }
+
+    public function capture_transaction(array $parameters = array()) {
+        return $this->createRequest('\Omnipay\Astropay\Message\PurchaseRequest', $parameters);
+    }
+
+    public function auth_transaction(array $parameters = array()) {
+        return $this->createRequest('\Omnipay\Astropay\Message\PurchaseRequest', $parameters);
+    }
+
+    public function auth_capture_transaction(array $parameters = array()) {
+        return $this->createRequest('\Omnipay\Astropay\Message\PurchaseRequest', $parameters);
+    }
+
+    public function refund_transaction(array $parameters = array()) {
+        return $this->createRequest('\Omnipay\Astropay\Message\PurchaseRequest', $parameters);
+    }
+
+    public function void_transaction(array $parameters = array()) {
+        return $this->createRequest('\Omnipay\Astropay\Message\PurchaseRequest', $parameters);
+    }
+
+
 }

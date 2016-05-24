@@ -8,8 +8,11 @@ class PurchaseRequest extends AbstractRequest {
         return $data;
     }
 
-    public function sendData($data)
-    {
+    public function sendData($data) {
         return new PurchaseResponse($this, $data);
+    }
+
+    public function getEndpoint() {
+        return $this->endpoint.'verif/validator';
     }
 }
