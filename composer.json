@@ -1,0 +1,28 @@
+{
+    "name": "apoyan/omnipay-astropay",
+    "type": "library",
+    "description": "Astropay driver for the Omnipay payment processing library",
+    "keywords": [
+        "astropay",
+        "gateway",
+        "merchant",
+        "omnipay",
+        "pay",
+        "payment"
+    ],
+    "homepage": "https://github.com/apoyan/omnipay-astropay",
+    "license": "MIT",
+    "autoload": {
+        "psr-0": { "Omnipay\\Astropay\\" : "src/" }
+    },
+    "require": {
+        "omnipay/common": "~2.3"
+    },
+    "require-dev": {
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
+    }
+}

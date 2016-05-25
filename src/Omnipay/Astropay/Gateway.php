@@ -18,48 +18,22 @@ class Gateway extends AbstractGateway {
     }
 
     public function getXLogin() {
-        return $this->getParameter('XLogin');
+        return $this->getParameter('x_login');
     }
 
     public function setXLogin($value) {
-        return $this->setParameter('XLogin', $value);
+        return $this->setParameter('x_login', $value);
     }
 
     public function getXTransKey() {
-        return $this->getParameter('XTransKey');
+        return $this->getParameter('x_trans_key');
     }
 
     public function setXTransKey($value) {
-        return $this->setParameter('XTransKey', $value);
+        return $this->setParameter('x_trans_key', $value);
     }
 
     public function purchase(array $parameters = array()) {
         return $this->createRequest('\Omnipay\Astropay\Message\PurchaseRequest', $parameters);
     }
-
-    public function auth_transaction(array $parameters = array()) {
-        return $this->createRequest('\Omnipay\Astropay\Message\PurchaseRequest', $parameters);
-    }
-
-    public function capture_transaction(array $parameters = array()) {
-        return $this->createRequest('\Omnipay\Astropay\Message\PurchaseRequest', $parameters);
-    }
-
-    public function auth_transaction(array $parameters = array()) {
-        return $this->createRequest('\Omnipay\Astropay\Message\PurchaseRequest', $parameters);
-    }
-
-    public function auth_capture_transaction(array $parameters = array()) {
-        return $this->createRequest('\Omnipay\Astropay\Message\PurchaseRequest', $parameters);
-    }
-
-    public function refund_transaction(array $parameters = array()) {
-        return $this->createRequest('\Omnipay\Astropay\Message\PurchaseRequest', $parameters);
-    }
-
-    public function void_transaction(array $parameters = array()) {
-        return $this->createRequest('\Omnipay\Astropay\Message\PurchaseRequest', $parameters);
-    }
-
-
 }
