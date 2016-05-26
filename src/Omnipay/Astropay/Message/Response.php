@@ -14,7 +14,7 @@ class Response extends AbstractResponse {
     return $this->data['response_reason_text'];
   }
 
-  public function getResponse() {
+  public function getData() {
 
   }
 }
