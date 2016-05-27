@@ -15,6 +15,19 @@ class Response extends AbstractResponse {
   }
 
   public function getData() {
+    return $this->data;
+  }
 
+
+  public function hasCallback() {
+    return false;
+  }
+
+  public function getStatus() {
+    return ($this->isSuccessful()) ? 4 : 3;
+  }
+
+  public function getTransactionId() {
+    return $this->data['x_description'];
   }
 }

@@ -29,36 +29,36 @@ abstract class AbstractRequest extends \Omnipay\Common\Message\AbstractRequest {
       return $this->setParameter('x_trans_key', $value);
   }
 
-  public function getXUniqueId() {
-      return $this->getParameter('x_unique_id');
+  public function getUserId() {
+      return $this->getParameter('UserId');
   }
 
-  public function setXUniqueId($value) {
-      return $this->setParameter('x_unique_id', $value);
+  public function setUserId($value) {
+      return $this->setParameter('UserId', $value);
   }
 
-  public function getXCardNum() {
-      return $this->getParameter('x_card_num');
+  public function getCardNum() {
+      return $this->getParameter('card_num');
   }
 
-  public function setXCardNum($value) {
-      return $this->setParameter('x_card_num', $value);
+  public function setCardNum($value) {
+      return $this->setParameter('card_num', $value);
   }
 
-  public function getXCardCode() {
-      return $this->getParameter('x_card_code');
+  public function getCvv() {
+      return $this->getParameter('cvv');
   }
 
-  public function setXCardCode($value) {
-      return $this->setParameter('x_card_code', $value);
+  public function setCvv($value) {
+      return $this->setParameter('cvv', $value);
   }
 
-  public function getXExpDate() {
-      return $this->getParameter('x_exp_date');
+  public function getExpDate() {
+      return $this->getParameter('exp_date');
   }
 
-  public function setXExpDate($value) {
-      return $this->setParameter('x_exp_date', $value);
+  public function setExpDate($value) {
+      return $this->setParameter('exp_date', $value);
   }
 
 
