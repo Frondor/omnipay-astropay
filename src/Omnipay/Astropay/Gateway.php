@@ -33,7 +33,7 @@ class Gateway extends AbstractGateway {
         return $this->setParameter('x_trans_key', $value);
     }
 
-    public function purchase(array $parameters = array()) {
+    public function request(array $parameters = array(), $payment_action) {
         return $this->createRequest('\Omnipay\Astropay\Message\PurchaseRequest', $parameters);
     }
 }
